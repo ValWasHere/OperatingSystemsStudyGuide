@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 01 D2L</title>
+    <link rel="stylesheet" href="./Ch_1_Quiz.css">
+</head>
+
+<body>
+    <div id="questionAnswerPrompt">
+        <h1 id="questionOne">End-user data is data that is __ of interest to the end user?</h1>
+        <div id="buttonListOne">
+            <button onclick="checkAnswerOne('A')">A - Refined Data</button>
+            <button onclick="checkAnswerOne('B')">B - Metadata</button>
+            <button onclick="checkAnswerOne('C')">C - Filtered Data</button>
+            <button onclick="checkAnswerOne('D')">D - Raw Facts</button>
+        </div>
+        <div id="outputDisplayOne" class="outputStyle">Answer Reveal</div>
+    </div>
+    <div id="questionAnswerPrompt">
+        <h1 id="questionOne">Which of the answers listed below is an example of structured data?</h1>
+        <div id="buttonListOne">
+            <button onclick="checkAnswerTwo('A')">A - Invoices stored in a computer</button>
+            <button onclick="checkAnswerTwo('B')">B - Data in an excel spreadsheet</button>
+            <button onclick="checkAnswerTwo('C')">C - Pictures stored in a computer</button>
+            <button onclick="checkAnswerTwo('D')">D - PDF documents stored in a computer</button>
+        </div>
+        <div id="outputDisplayTwo" class="outputStyle">Answer Reveal</div>
+    </div>
+    <div id="questionAnswerPrompt">
+        <h1 id="questionOne">Which of the answers below is not an example of a web browser that a database management
+            system (DBMS) might use to provide access to the database?</h1>
+        <div id="buttonListOne">
+            <button onclick="checkAnswerThree('A')">A - Mozzarella Firefoc</button>
+            <button onclick="checkAnswerThree('B')">B - Microsoft Edge</button>
+            <button onclick="checkAnswerThree('C')">C - Google Chrome</button>
+            <button onclick="checkAnswerThree('D')">D - Brave Software Inc's Brave</button>
+        </div>
+        <div id="outputDisplayThree" class="outputStyle">Answer Reveal</div>
+    </div>
+    <div id="questionAnswerPrompt">
+        <h1 id="questionOne">Which of the answers below is not one of the reasons a spreadsheet is not considered a
+            database?</h1>
+        <div id="buttonListOne">
+            <button onclick="checkAnswerFour('A')">A - A spreadsheet does not support enforcement of data types or
+                domains</button>
+            <button onclick="checkAnswerFour('B')">B - A spreadsheet allows for the manipulation of data in a tabular
+                format</button>
+            <button onclick="checkAnswerFour('C')">C - A spreadsheet does not support self-documentation through
+                metadata</button>
+            <button onclick="checkAnswerFour('D')">D - A spreadsheet does not support defined relationships among
+                tables</button>
+        </div>
+        <div id="outputDisplayFour" class="outputStyle">Answer Reveal</div>
+    </div>
+    <div id="questionAnswerPrompt">
+        <h1 id="questionOne">Metadata is ___?</h1>
+        <div id="buttonListOne">
+            <button onclick="checkAnswerFive('A')">A - Raw data</button>
+            <button onclick="checkAnswerFive('B')">B - Refined data</button>
+            <button onclick="checkAnswerFive('C')">C - Filtered data</button>
+            <button onclick="checkAnswerFive('D')">D - Data about data</button>
+        </div>
+        <div id="outputDisplayFive" class="outputStyle">Answer Reveal</div>
+    </div>
+    <div id="questionAnswerPrompt">
+        <h1 id="questionOne">_____ relates to the activities that make the database execute transactions more
+            efficiently in terms of storage and access speed.</h1>
+        <div id="buttonListOne">
+            <button onclick="checkAnswerSix('A')">A - Database Design</button>
+            <button onclick="checkAnswerSix('B')">B - Performance Tuning</button>
+            <button onclick="checkAnswerSix('C')">C - Query Access</button>
+            <button onclick="checkAnswerSix('D')">D - Database Management</button>
+        </div>
+        <div id="outputDisplaySix" class="outputStyle">Answer Reveal</div>
+    </div>
+    <div id="questionAnswerPrompt">
+        <h1 id="questionOne">Unstructured and semistructured data can be stored in the databases below except __?</h1>
+        <div id="buttonListOne">
+            <button onclick="checkAnswerSeven('A')">A - Microsoft Access Database</button>
+            <button onclick="checkAnswerSeven('B')">B - NoSQL</button>
+            <button onclick="checkAnswerSeven('C')">C - Social Media</button>
+            <button onclick="checkAnswerSeven('D')">D - Extensible Markup Language (XML)</button>
+        </div>
+        <div id="outputDisplaySeven" class="outputStyle">Answer Reveal</div>
+    </div>
+    <div id="questionAnswerPrompt">
+        <h1 id="questionOne">A(n) _____ database is used by an organization to support many users across many
+            departments.</h1>
+        <div id="buttonListOne">
+            <button onclick="checkAnswerEight('A')">A - Desktop</button>
+            <button onclick="checkAnswerEight('B')">B - Workgroup</button>
+            <button onclick="checkAnswerEight('C')">C - Enterprise</button>
+            <button onclick="checkAnswerEight('D')">D - Transactional</button>
+        </div>
+        <div id="outputDisplayEight" class="outputStyle">Answer Reveal</div>
+    </div>
+    <div id="questionAnswerPrompt">
+        <h1 id="questionOne">A data warehouse contains historical data obtained from the _____.</h1>
+        <div id="buttonListOne">
+            <button onclick="checkAnswerNine('A')">A - Operational Databases</button>
+            <button onclick="checkAnswerNine('B')">B - Desktop Databases</button>
+            <button onclick="checkAnswerNine('C')">C - Enterprise Databases</button>
+            <button onclick="checkAnswerNine('D')">D - Workgroup Databases</button>
+        </div>
+        <div id="outputDisplayNine" class="outputStyle">Answer Reveal</div>
+    </div>
+    <div id="questionAnswerPrompt">
+        <h1 id="questionOne">James is a database administrator. He has loaded data into the database and he has some
+            information. What does he require to reveal the meaning of the information?</h1>
+        <div id="buttonListOne">
+            <button onclick="checkAnswerTen('A')">A - Knowledge</button>
+            <button onclick="checkAnswerTen('B')">B - Information</button>
+            <button onclick="checkAnswerTen('C')">C - Context</button>
+            <button onclick="checkAnswerTen('D')">D - Discipline</button>
+        </div>
+        <div id="outputDisplayTen" class="outputStyle">Answer Reveal</div>
+    </div>
+    <div id="questionAnswerPrompt">
+        <h1 id="questionOne">Data is the result of interpreting facts to reveal meaning.</h1>
+        <div id="buttonListOne">
+            <button onclick="checkAnswerEleven('A')">A - True</button>
+            <button onclick="checkAnswerEleven('B')">B - False</button>
+
+        </div>
+        <div id="outputDisplayEleven" class="outputStyle">Answer Reveal</div>
+    </div>
+    <div id="questionAnswerPrompt">
+        <h2>12</h2>
+        <h1 id="questionOne">One of the advantages of a database system over previous data management approaches is
+            reduced costs.</h1>
+        <div id="buttonListOne">
+            <button onclick="checkAnswerTwelve('A')">A - True</button>
+            <button onclick="checkAnswerTwelve('B')">B - False</button>
+        </div>
+        <div id="outputDisplayTwelve" class="outputStyle">Answer Reveal</div>
+    </div>
+    <div id="questionAnswerPrompt">
+        <h2>13</h2>
+        <h1 id="questionOne">Thorough database planning and design is important to ensure that data is properly used to
+            give the organization the most benefit.</h1>
+        <div id="buttonListOne">
+            <button onclick="checkAnswerThirteen('A')">A - True</button>
+            <button onclick="checkAnswerThirteen('B')">B - False</button>
+
+        </div>
+        <div id="outputDisplayThirteen" class="outputStyle">Answer Reveal</div>
+    </div>
+    <div id="questionAnswerPrompt">
+        <h2>14</h2>
+        <h1 id="questionOne">The term database system refers to an organization of components that define and regulate
+            the collection, storage, management, and use of data within a database environment.</h1>
+        <div id="buttonListOne">
+            <button onclick="checkAnswerFourteen('A')">A - True</button>
+            <button onclick="checkAnswerFourteen('B')">B - False</button>
+        </div>
+        <div id="outputDisplayFourteen" class="outputStyle">Answer Reveal</div>
+    </div>
+    <div id="questionAnswerPrompt">
+        <h2>15</h2>
+        <h1 id="questionOne">Unstructured data is data that exists in the format in which it was collected (raw state).
+            While
+            Structured data is the result of formatting unstructured data to enable storage, use, and
+            generation of information.</h1>
+        <div id="buttonListOne">
+            <button onclick="checkAnswerFifteen('A')">A - True</button>
+            <button onclick="checkAnswerFifteen('B')">B - False</button>
+        </div>
+        <div id="outputDisplayFifteen" class="outputStyle">Answer Reveal</div>
+    </div>
+    <div id="questionAnswerPrompt">
+        <h2>16</h2>
+        <h1 id="questionOne">Structural dependence exists when it is possible to make changes in the file structure without affecting the application program's ability to access the data.</h1>
+        <div id="buttonListOne">
+            <button onclick="checkAnswerSixteen('A')">A - True</button>
+            <button onclick="checkAnswerSixteen('B')">B - False</button>
+        </div>
+        <div id="outputDisplaySixteen" class="outputStyle">Answer Reveal</div>
+    </div>
+    <div id="questionAnswerPrompt">
+        <h2>17</h2>
+        <h1 id="questionOne">It is unnecessary for the database designer to determine which data to enter into the database and how to organize that data in the database management system.</h1>
+        <div id="buttonListOne">
+            <button onclick="checkAnswerSeventeen('A')">A - True</button>
+            <button onclick="checkAnswerSeventeen('B')">B - False</button>
+        </div>
+        <div id="outputDisplaySeventeen" class="outputStyle">Answer Reveal</div>
+    </div>
+    <div id="questionAnswerPrompt">
+        <h2>18</h2>
+        <h1 id="questionOne">A data warehouse can store data derived from many sources.</h1>
+        <div id="buttonListOne">
+            <button onclick="checkAnswerEighteen('A')">A - True</button>
+            <button onclick="checkAnswerEighteen('B')">B - False</button>
+        </div>
+        <div id="outputDisplayEighteen" class="outputStyle">Answer Reveal</div>
+    </div>
+    <div id="questionAnswerPrompt">
+        <h2>19</h2>
+        <h1 id="questionOne">A good Database Management System (DBMS) will perform well even with a badly designed database.</h1>
+        <div id="buttonListOne">
+            <button onclick="checkAnswerNineteen ('A')">A - True</button>
+            <button onclick="checkAnswerNineteen ('B')">B - False</button>
+        </div>
+        <div id="outputDisplayNineteen" class="outputStyle">Answer Reveal</div>
+    </div>
+    <div id="questionAnswerPrompt">
+        <h2>20</h2>
+        <h1 id="questionOne">Data redundancy exists when data is duplicated and stored unnecessarily at different places.</h1>
+        <div id="buttonListOne">
+            <button onclick="checkAnswerTwenty('A')">A - True</button>
+            <button onclick="checkAnswerTwenty('B')">B - False</button>
+        </div>
+        <div id="outputDisplayTwenty" class="outputStyle">Answer Reveal</div>
+    </div>
+    <script src="./Ch_1_Quiz.js"></script>
+</body>
+I have no idea hahah
+</html>
