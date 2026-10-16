@@ -1,220 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz 01 D2L</title>
-    <link rel="stylesheet" href="./Ch_1_Quiz.css">
+    <link rel="stylesheet" href="d2l_Q_3.css">
 </head>
-
 <body>
-    <div id="questionAnswerPrompt">
-        <h1 id="questionOne">End-user data is data that is __ of interest to the end user?</h1>
-        <div id="buttonListOne">
-            <button onclick="checkAnswerOne('A')">A - Refined Data</button>
-            <button onclick="checkAnswerOne('B')">B - Metadata</button>
-            <button onclick="checkAnswerOne('C')">C - Filtered Data</button>
-            <button onclick="checkAnswerOne('D')">D - Raw Facts</button>
+    <ul>
+        <li>This document might not be accessible.</li>
+        <li>Some things might not be visible when there is a night light enabled.</li>
+    </ul>
+    <div id="questionContainer">
+        <h2>1</h2>
+        <h1 id="question">Which of the following is used to read a single character from a file?</h1>
+        <div id="buttonList">
+            <button id="btnStyle" onclick="checkAnswer1('A')">getchar</button>
+            <button id="btnStyle" onclick="checkAnswer1('B')">putchar</button>
+            <button id="btnStyle" onclick="checkAnswer1('C')">fgetc</button>
+            <button id="btnStyle" onclick="checkAnswer1('D')">fputc</button>
         </div>
-        <div id="outputDisplayOne" class="outputStyle">Answer Reveal</div>
+        <div id="outputDisplay1" class="outputStyle">Answer Reveal</div>
     </div>
-    <div id="questionAnswerPrompt">
-        <h1 id="questionOne">Which of the answers listed below is an example of structured data?</h1>
-        <div id="buttonListOne">
-            <button onclick="checkAnswerTwo('A')">A - Invoices stored in a computer</button>
-            <button onclick="checkAnswerTwo('B')">B - Data in an excel spreadsheet</button>
-            <button onclick="checkAnswerTwo('C')">C - Pictures stored in a computer</button>
-            <button onclick="checkAnswerTwo('D')">D - PDF documents stored in a computer</button>
+    <div id="questionContainer">
+        <h2>2</h2>
+        <h1 id="question">Which of the following performance metrics measures the additional resource cost of implementing an abstraction?</h1>
+        <div id="buttonList">
+            <button id="btnStyle" onclick="checkAnswer2('A')">Overhead</button>
+            <button id="btnStyle" onclick="checkAnswer2('B')">Fairness</button>
+            <button id="btnStyle" onclick="checkAnswer2('C')">Response time</button>
+            <button id="btnStyle" onclick="checkAnswer2('D')">Throughput</button>
         </div>
-        <div id="outputDisplayTwo" class="outputStyle">Answer Reveal</div>
+        <div id="outputDisplay2" class="outputStyle">Answer Reveal</div>
     </div>
-    <div id="questionAnswerPrompt">
-        <h1 id="questionOne">Which of the answers below is not an example of a web browser that a database management
-            system (DBMS) might use to provide access to the database?</h1>
-        <div id="buttonListOne">
-            <button onclick="checkAnswerThree('A')">A - Mozzarella Firefoc</button>
-            <button onclick="checkAnswerThree('B')">B - Microsoft Edge</button>
-            <button onclick="checkAnswerThree('C')">C - Google Chrome</button>
-            <button onclick="checkAnswerThree('D')">D - Brave Software Inc's Brave</button>
+    <div id="questionContainer">
+        <h2>3</h2>
+        <h1 id="question">Which of the following C data types is typically used to represent a Boolean value?</h1>
+        <div id="buttonList">
+            <button id="btnStyle" onclick="checkAnswer3('A')">char</button>
+            <button id="btnStyle" onclick="checkAnswer3('B')">int</button>
+            <button id="btnStyle" onclick="checkAnswer3('C')">float</button>
+            <button id="btnStyle" onclick="checkAnswer3('D')">double</button>
         </div>
-        <div id="outputDisplayThree" class="outputStyle">Answer Reveal</div>
+        <div id="outputDisplay3" class="outputStyle">Answer Reveal</div>
     </div>
-    <div id="questionAnswerPrompt">
-        <h1 id="questionOne">Which of the answers below is not one of the reasons a spreadsheet is not considered a
-            database?</h1>
-        <div id="buttonListOne">
-            <button onclick="checkAnswerFour('A')">A - A spreadsheet does not support enforcement of data types or
-                domains</button>
-            <button onclick="checkAnswerFour('B')">B - A spreadsheet allows for the manipulation of data in a tabular
-                format</button>
-            <button onclick="checkAnswerFour('C')">C - A spreadsheet does not support self-documentation through
-                metadata</button>
-            <button onclick="checkAnswerFour('D')">D - A spreadsheet does not support defined relationships among
-                tables</button>
+    <div id="questionContainer">
+        <h2>4</h2>
+        <h1 id="question">A computer that stays online without crashing, but does not operate the way it was designed is best described as...</h1>
+        <div id="buttonList">
+            <button id="btnStyle" onclick="checkAnswer4('A')">Reliable and available</button>
+            <button id="btnStyle" onclick="checkAnswer4('B')">Reliable but unavailable</button>
+            <button id="btnStyle" onclick="checkAnswer4('C')">Unreliable but available</button>
+            <button id="btnStyle" onclick="checkAnswer4('D')">Unreliable and unavailable</button>
         </div>
-        <div id="outputDisplayFour" class="outputStyle">Answer Reveal</div>
+        <div id="outputDisplay4" class="outputStyle">Answer Reveal</div>
     </div>
-    <div id="questionAnswerPrompt">
-        <h1 id="questionOne">Metadata is ___?</h1>
-        <div id="buttonListOne">
-            <button onclick="checkAnswerFive('A')">A - Raw data</button>
-            <button onclick="checkAnswerFive('B')">B - Refined data</button>
-            <button onclick="checkAnswerFive('C')">C - Filtered data</button>
-            <button onclick="checkAnswerFive('D')">D - Data about data</button>
+    <div id="questionContainer">
+        <h2>5</h2>
+        <img src="Question_5.png" alt="A snippet of some C code">
+        <h1 id="question">Given the following code, which of the following expression does not evaluate to 5?</h1>
+        <div id="buttonList">
+            <button id="btnStyle" onclick="checkAnswer5('A')">&num</button>
+            <button id="btnStyle" onclick="checkAnswer5('B')">*ptr</button>
+            <button id="btnStyle" onclick="checkAnswer5('C')">int_list[4]</button>
+            <button id="btnStyle" onclick="checkAnswer5('D')">pair.first</button>
         </div>
-        <div id="outputDisplayFive" class="outputStyle">Answer Reveal</div>
+        <div id="outputDisplay5" class="outputStyle">Answer Reveal</div>
     </div>
-    <div id="questionAnswerPrompt">
-        <h1 id="questionOne">_____ relates to the activities that make the database execute transactions more
-            efficiently in terms of storage and access speed.</h1>
-        <div id="buttonListOne">
-            <button onclick="checkAnswerSix('A')">A - Database Design</button>
-            <button onclick="checkAnswerSix('B')">B - Performance Tuning</button>
-            <button onclick="checkAnswerSix('C')">C - Query Access</button>
-            <button onclick="checkAnswerSix('D')">D - Database Management</button>
+    <div id="questionContainer">
+        <h2>6</h2>
+        <h1 id="question">Which of the following does <u>not</u> appear in a C header file?</h1>
+        <div id="buttonList">
+            <button id="btnStyle" onclick="checkAnswer6('A')">Variable declarations</button>
+            <button id="btnStyle" onclick="checkAnswer6('B')">Constant declarations</button>
+            <button id="btnStyle" onclick="checkAnswer6('C')">Function prototypes</button>
+            <button id="btnStyle" onclick="checkAnswer6('D')">Function definitions</button>
         </div>
-        <div id="outputDisplaySix" class="outputStyle">Answer Reveal</div>
+        <div id="outputDisplay6" class="outputStyle">Answer Reveal</div>
     </div>
-    <div id="questionAnswerPrompt">
-        <h1 id="questionOne">Unstructured and semistructured data can be stored in the databases below except __?</h1>
-        <div id="buttonListOne">
-            <button onclick="checkAnswerSeven('A')">A - Microsoft Access Database</button>
-            <button onclick="checkAnswerSeven('B')">B - NoSQL</button>
-            <button onclick="checkAnswerSeven('C')">C - Social Media</button>
-            <button onclick="checkAnswerSeven('D')">D - Extensible Markup Language (XML)</button>
+    <div id="questionContainer">
+        <h2>7</h2>
+        <h1 id="question">Which of the following commands is used to display the current working directory?</h1>
+        <div id="buttonList">
+            <button id="btnStyle" onclick="checkAnswer7('A')">mkdir</button>
+            <button id="btnStyle" onclick="checkAnswer7('B')">pwd</button>
+            <button id="btnStyle" onclick="checkAnswer7('C')">rmdir</button>
+            <button id="btnStyle" onclick="checkAnswer7('D')">cd</button>
         </div>
-        <div id="outputDisplaySeven" class="outputStyle">Answer Reveal</div>
+        <div id="outputDisplay7" class="outputStyle">Answer Reveal</div>
     </div>
-    <div id="questionAnswerPrompt">
-        <h1 id="questionOne">A(n) _____ database is used by an organization to support many users across many
-            departments.</h1>
-        <div id="buttonListOne">
-            <button onclick="checkAnswerEight('A')">A - Desktop</button>
-            <button onclick="checkAnswerEight('B')">B - Workgroup</button>
-            <button onclick="checkAnswerEight('C')">C - Enterprise</button>
-            <button onclick="checkAnswerEight('D')">D - Transactional</button>
+    <div id="questionContainer">
+        <h2>8</h2>
+        <h1 id="question">Which of the following is <u>not</u> a declaration of a pointer variable?</b></h1>
+        <div id="buttonList">
+            <button id="btnStyle" onclick="checkAnswer8('A')">int *p;</button>
+            <button id="btnStyle" onclick="checkAnswer8('B')">int arr[10];</button>
+            <button id="btnStyle" onclick="checkAnswer8('C')">struct point p1;</button>
+            <button id="btnStyle" onclick="checkAnswer8('D')">struct point *p2;</button>
         </div>
-        <div id="outputDisplayEight" class="outputStyle">Answer Reveal</div>
+        <div id="outputDisplay8" class="outputStyle">Answer Reveal</div>
     </div>
-    <div id="questionAnswerPrompt">
-        <h1 id="questionOne">A data warehouse contains historical data obtained from the _____.</h1>
-        <div id="buttonListOne">
-            <button onclick="checkAnswerNine('A')">A - Operational Databases</button>
-            <button onclick="checkAnswerNine('B')">B - Desktop Databases</button>
-            <button onclick="checkAnswerNine('C')">C - Enterprise Databases</button>
-            <button onclick="checkAnswerNine('D')">D - Workgroup Databases</button>
+    <div id="questionContainer">
+        <h2>9</h2>
+        <h1 id="question">Which of the following is a correct C function prototype?</h1>
+        <div id="buttonList">
+            <button id="btnStyle" onclick="checkAnswer9('A')">double square (double number);</button>
+            <button id="btnStyle" onclick="checkAnswer9('B')">double square (double number)</button>
+            <button id="btnStyle" onclick="checkAnswer9('C')">double square (double number){ return number * number; }</button>
+            <button id="btnStyle" onclick="checkAnswer9('D')">square(5);</button>
         </div>
-        <div id="outputDisplayNine" class="outputStyle">Answer Reveal</div>
+        <div id="outputDisplay9" class="outputStyle">Answer Reveal</div>
     </div>
-    <div id="questionAnswerPrompt">
-        <h1 id="questionOne">James is a database administrator. He has loaded data into the database and he has some
-            information. What does he require to reveal the meaning of the information?</h1>
-        <div id="buttonListOne">
-            <button onclick="checkAnswerTen('A')">A - Knowledge</button>
-            <button onclick="checkAnswerTen('B')">B - Information</button>
-            <button onclick="checkAnswerTen('C')">C - Context</button>
-            <button onclick="checkAnswerTen('D')">D - Discipline</button>
+    <div id="questionContainer">
+        <h2>10</h2>
+        <h1 id="question">Which of the following best describes a batch operating system?</h1>
+        <div id="buttonList">
+            <button id="btnStyle" onclick="checkAnswer10('A')">A multiuser system that operates on a queue of jobs</button>
+            <button id="btnStyle" onclick="checkAnswer10('B')">A system that supports multiple simultaneous network connections</button>
+            <button id="btnStyle" onclick="checkAnswer10('C')">A set of I/O routines for a single user system</button>
+            <button id="btnStyle" onclick="checkAnswer10('D')">A system that processes input events to support interactive computing.</button>
         </div>
-        <div id="outputDisplayTen" class="outputStyle">Answer Reveal</div>
+        <div id="outputDisplay10" class="outputStyle">Answer Reveal</div>
     </div>
-    <div id="questionAnswerPrompt">
-        <h1 id="questionOne">Data is the result of interpreting facts to reveal meaning.</h1>
-        <div id="buttonListOne">
-            <button onclick="checkAnswerEleven('A')">A - True</button>
-            <button onclick="checkAnswerEleven('B')">B - False</button>
-
+    <div id="questionContainer">
+        <h2>11</h2>
+        <h1 id="question">Which of the following best describes a time-sharing operating system?</h1>
+        <div id="buttonList">
+            <button id="btnStyle" onclick="checkAnswer11('A')">A multiuser system that operates on a queue of jobs</button>
+            <button id="btnStyle" onclick="checkAnswer11('B')">A system that supports multiple simultaneous network connections</button>
+            <button id="btnStyle" onclick="checkAnswer11('C')">A set of I/O routines for a single user system.</button>
+            <button id="btnStyle" onclick="checkAnswer11('D')">A system that processes input to support interactive computing.</button>
         </div>
-        <div id="outputDisplayEleven" class="outputStyle">Answer Reveal</div>
+        <div id="outputDisplay11" class="outputStyle">Answer Reveal</div>
     </div>
-    <div id="questionAnswerPrompt">
+    <div id="questionContainer">
         <h2>12</h2>
-        <h1 id="questionOne">One of the advantages of a database system over previous data management approaches is
-            reduced costs.</h1>
-        <div id="buttonListOne">
-            <button onclick="checkAnswerTwelve('A')">A - True</button>
-            <button onclick="checkAnswerTwelve('B')">B - False</button>
+        <h1 id="question">Which of the following roles is an operating system playing when it determines which application should run next on a processor?</h1>
+        <div id="buttonList">
+            <button id="btnStyle" onclick="checkAnswer12('A')">Referee (managin resources)</button>
+            <button id="btnStyle" onclick="checkAnswer12('B')">Illusionist (abstracting the hardware)</button>
+            <button id="btnStyle" onclick="checkAnswer12('C')">Glue (providing common services)</button>
+            <button id="btnStyle" onclick="checkAnswer12('D')">None of the above</button>   
         </div>
-        <div id="outputDisplayTwelve" class="outputStyle">Answer Reveal</div>
+        <div id="outputDisplay12" class="outputStyle">Answer Reveal</div>
     </div>
-    <div id="questionAnswerPrompt">
+    <div id="questionContainer">
         <h2>13</h2>
-        <h1 id="questionOne">Thorough database planning and design is important to ensure that data is properly used to
-            give the organization the most benefit.</h1>
-        <div id="buttonListOne">
-            <button onclick="checkAnswerThirteen('A')">A - True</button>
-            <button onclick="checkAnswerThirteen('B')">B - False</button>
-
+        <h1 id="question">What is multitasking?</h1>
+        <div id="buttonList">
+            <button id="btnStyle" onclick="checkAnswer13('A')">Using multiple processors to run a single application.</button>
+            <button id="btnStyle" onclick="checkAnswer13('B')">Switching between multiple programs in memory.</button>
+            <button id="btnStyle" onclick="checkAnswer13('C')">Using an interrupt handler to respond quickly to user input.</button>
+            <button id="btnStyle" onclick="checkAnswer13('D')">Running a sequence of tasks one at a time without interruption.</button>
         </div>
-        <div id="outputDisplayThirteen" class="outputStyle">Answer Reveal</div>
+        <div id="outputDisplay13" class="outputStyle">Answer Reveal</div>
     </div>
-    <div id="questionAnswerPrompt">
+    <div id="questionContainer">
         <h2>14</h2>
-        <h1 id="questionOne">The term database system refers to an organization of components that define and regulate
-            the collection, storage, management, and use of data within a database environment.</h1>
-        <div id="buttonListOne">
-            <button onclick="checkAnswerFourteen('A')">A - True</button>
-            <button onclick="checkAnswerFourteen('B')">B - False</button>
+        <h1 id="question">Fault isolation can impact which of the following design goals?</h1>
+        <div id="buttonList">
+            <button id="btnStyle" onclick="checkAnswer14('A')">Reliability</button>
+            <button id="btnStyle" onclick="checkAnswer14('B')">Availability</button>
+            <button id="btnStyle" onclick="checkAnswer14('C')">Security</button>
+            <button id="btnStyle" onclick="checkAnswer14('D')">All of the above</button>
         </div>
-        <div id="outputDisplayFourteen" class="outputStyle">Answer Reveal</div>
+        <div id="outputDisplay14" class="outputStyle">Answer Reveal</div>
     </div>
-    <div id="questionAnswerPrompt">
+    <div id="questionContainer">
         <h2>15</h2>
-        <h1 id="questionOne">Unstructured data is data that exists in the format in which it was collected (raw state).
-            While
-            Structured data is the result of formatting unstructured data to enable storage, use, and
-            generation of information.</h1>
-        <div id="buttonListOne">
-            <button onclick="checkAnswerFifteen('A')">A - True</button>
-            <button onclick="checkAnswerFifteen('B')">B - False</button>
+        <h1 id="question">What does the ls command do?</h1>
+        <div id="buttonList">
+            <button id="btnStyle" onclick="checkAnswer15('A')">It lists the contents of a directory.</button>
+            <button id="btnStyle" onclick="checkAnswer15('B')">It displays the contents of a text file.</button>
+            <button id="btnStyle" onclick="checkAnswer15('C')">It deletes a file.</button>
+            <button id="btnStyle" onclick="checkAnswer15('D')">It renames a file.</button>
         </div>
-        <div id="outputDisplayFifteen" class="outputStyle">Answer Reveal</div>
+        <div id="outputDisplay15" class="outputStyle">Answer Reveal</div>
     </div>
-    <div id="questionAnswerPrompt">
+    <div id="questionContainer">
         <h2>16</h2>
-        <h1 id="questionOne">Structural dependence exists when it is possible to make changes in the file structure without affecting the application program's ability to access the data.</h1>
-        <div id="buttonListOne">
-            <button onclick="checkAnswerSixteen('A')">A - True</button>
-            <button onclick="checkAnswerSixteen('B')">B - False</button>
+        <h1 id="question">Which of the following roles is an operating system playing when it provides libraries for a graphical interface so that applications can have the same look and feel?</h1>
+        <div id="buttonList">
+            <button id="btnStyle" onclick="checkAnswer16('A')">Referee (managing resources)</button>
+            <button id="btnStyle" onclick="checkAnswer16('B')">Illusionist (abstracting the hardware)</button>
+            <button id="btnStyle" onclick="checkAnswer16('C')">Glue (providing common services)</button>
+            <button id="btnStyle" onclick="checkAnswer16('D')">None of the above</button>
         </div>
-        <div id="outputDisplaySixteen" class="outputStyle">Answer Reveal</div>
+        <div id="outputDisplay16" class="outputStyle">Answer Reveal</div>
     </div>
-    <div id="questionAnswerPrompt">
+    <div id="questionContainer">
         <h2>17</h2>
-        <h1 id="questionOne">It is unnecessary for the database designer to determine which data to enter into the database and how to organize that data in the database management system.</h1>
-        <div id="buttonListOne">
-            <button onclick="checkAnswerSeventeen('A')">A - True</button>
-            <button onclick="checkAnswerSeventeen('B')">B - False</button>
+        <h1 id="question">What does the mv command do?</h1>
+        <div id="buttonList">
+            <button id="btnStyle" onclick="checkAnswer17('A')">It lists the contents of a directory.</button>
+            <button id="btnStyle" onclick="checkAnswer17('B')">It displays the contents of a text file.</button>
+            <button id="btnStyle" onclick="checkAnswer17('C')">It deletes a file.</button>
+            <button id="btnStyle" onclick="checkAnswer17('D')">It renames a file.</button>
         </div>
-        <div id="outputDisplaySeventeen" class="outputStyle">Answer Reveal</div>
+        <div id="outputDisplay17" class="outputStyle">Answer Reveal</div>
     </div>
-    <div id="questionAnswerPrompt">
+    <div id="questionContainer">
         <h2>18</h2>
-        <h1 id="questionOne">A data warehouse can store data derived from many sources.</h1>
-        <div id="buttonListOne">
-            <button onclick="checkAnswerEighteen('A')">A - True</button>
-            <button onclick="checkAnswerEighteen('B')">B - False</button>
+        <h1 id="question">Which of the following commands is used to create a directory?</h1>
+        <div id="buttonList">
+            <button id="btnStyle" onclick="checkAnswer18('A')">pwd</button>
+            <button id="btnStyle" onclick="checkAnswer18('B')">mkdir</button>
+            <button id="btnStyle" onclick="checkAnswer18('C')">rmdir</button>
+            <button id="btnStyle" onclick="checkAnswer18('D')">cd</button>
         </div>
-        <div id="outputDisplayEighteen" class="outputStyle">Answer Reveal</div>
+        <div id="outputDisplay18" class="outputStyle">Answer Reveal</div>
     </div>
-    <div id="questionAnswerPrompt">
+    <div id="questionContainer">
         <h2>19</h2>
-        <h1 id="questionOne">A good Database Management System (DBMS) will perform well even with a badly designed database.</h1>
-        <div id="buttonListOne">
-            <button onclick="checkAnswerNineteen ('A')">A - True</button>
-            <button onclick="checkAnswerNineteen ('B')">B - False</button>
+        <h1 id="question">Which of the following performance metrics measures the amount of useful work done in a given amount of time?</h1>
+        <div id="buttonList">
+            <button id="btnStyle" onclick="checkAnswer19('A')">Overhead.</button>
+            <button id="btnStyle" onclick="checkAnswer19('B')">Fairness.</button>
+            <button id="btnStyle" onclick="checkAnswer19('C')">Response Time.</button>
+            <button id="btnStyle" onclick="checkAnswer19('D')">Throughput.</button>
         </div>
-        <div id="outputDisplayNineteen" class="outputStyle">Answer Reveal</div>
+        <div id="outputDisplay19" class="outputStyle">Answer Reveal</div>
     </div>
-    <div id="questionAnswerPrompt">
+    <div id="questionContainer">
         <h2>20</h2>
-        <h1 id="questionOne">Data redundancy exists when data is duplicated and stored unnecessarily at different places.</h1>
-        <div id="buttonListOne">
-            <button onclick="checkAnswerTwenty('A')">A - True</button>
-            <button onclick="checkAnswerTwenty('B')">B - False</button>
+        <h1 id="question">Which of the following roles is an operating system playing when it gives each application its own set of unlimited contiguous memory addresses?</h1>
+        <div id="buttonList">
+            <button id="btnStyle" onclick="checkAnswer20('A')">Referee (managing resources)</button>
+            <button id="btnStyle" onclick="checkAnswer20('B')">Illusionist (abstracting the hardware)</button>
+            <button id="btnStyle" onclick="checkAnswer20('C')">Glue (providing common services)</button>
+            <button id="btnStyle" onclick="checkAnswer20('D')">None of the above</button>
         </div>
-        <div id="outputDisplayTwenty" class="outputStyle">Answer Reveal</div>
+        <div id="outputDisplay20" class="outputStyle">Answer Reveal</div>
     </div>
-    <script src="./Ch_1_Quiz.js"></script>
+    <script src="d2l_Q_3.js"></script>
 </body>
-</html>
+</html
