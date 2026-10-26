@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 4</title>
+    <link rel="stylesheet" href="Quiz_4.css">
+</head>
+<body>
+    <ul>
+        <li>This is the quiz quiz 4</li>
+        <li>The answers are highlighted in red and green so if someone is color blind this is not accessible. D:<</li>
+        <li><a href="../../Module_3/d2l_Quiz_3/Quiz_3.html" target="_blank" rel="noopener noreferrer">Take Quiz 3 here!</a></li>
+        <li><a href="../../Study_Main_Page/study.html" target="_blank" rel="noopener noreferrer">Want to go to the main page? Click here!</a></li>
+    </ul>
+    <div id="qContain">
+        <p>1</p>
+        <h1 id="question">Splitting shared objects into separate objects each with its own lock can improve performance.</h1>
+        <div id="btnList">
+            <button id="AG1" class="btns" onclick="checkA1('A')">True</button>
+            <button id="BR1" class="btns" onclick="checkA1('B')">False</button>
+        </div>
+    </div>
+     <div id="qContain">
+        <p>2</p>
+        <h1 id="question">Which of the following is not an effective response to an overloaded system?</h1>
+        <div id="btnList">
+            <button id="AR2" class="btns" onclick="checkA2('A')">Add more capacity to the system</button>
+            <button id="BR2" class="btns" onclick="checkA2('B')">Reduce the service time by performing faster services</button>
+            <button id="CR2" class="btns" onclick="checkA2('C')">Reject some requests to preserve quality of service for others</button>
+            <button id="DG2" class="btns" onclick="checkA2('D')">Do more  work</button>
+        </div>
+    </div>
+     <div id="qContain">
+        <p>3</p>
+        <h1 id="question">Which of the following lock design patterns involves a shared object being removed from a shared container so that a single thread can modify it?</h1>
+        <div id="btnList">
+            <button id="AR3" class="btns" onclick="checkA3('A')">Fine-grained locking.</button>
+            <button id="BR3" class="btns" onclick="checkA3('B')">Per-processor data structures</button>
+            <button id="CG3" class="btns" onclick="checkA3('C')">The ownership design pattern</button>
+            <button id="DR3" class="btns" onclick="checkA3('D')">Staged architecture</button>
+        </div>
+    </div>
+     <div id="qContain">
+        <p>4</p>
+        <h1 id="question">Response time decreases with increased load.</h1>
+        <div id="btnList">
+            <button id="AR4" class="btns" onclick="checkA4('A')">True</button>
+            <button id="BG4" class="btns" onclick="checkA4('B')">False</button>
+        </div>
+    </div>
+     <div id="qContain">
+        <p>5</p>
+        <h1 id="question">What is the difference between acquire-all/release-all and two-phase locking</h1>
+        <div id="btnList">
+            <button id="AG5" class="btns" onclick="checkA5('A')">In two-phase locking, locks can be acquired as needed.</button>
+            <button id="BR5" class="btns" onclick="checkA5('B')">In two-phase locking, locks must be acquired before any other operations are performed.</button>
+            <button id="CR5" class="btns" onclick="checkA5('C')">Two-phase locking is serializable.</button>
+            <button id="DR5" class="btns" onclick="checkA5('D')">Two-phase locking allows a lock to be acquired after another lock has been released.</button>
+        </div>
+    </div>
+    <div id="qContain">
+        <p>6</p>
+        <h1 id="question">What does Little's Law say about a stable system?</h1>
+        <div id="btnList">
+            <button id="AR6" class="btns" onclick="checkA6('A')">The number of tasks is equal to the utilization times the response time.</button>
+            <button id="BG6" class="btns" onclick="checkA6('B')">The number of tasks is equal to the throughput times the response time.</button>
+            <button id="CR6" class="btns" onclick="checkA6('C')">The number of tasks is equal to the utilization divided by the response time.</button>
+            <button id="DR6" class="btns" onclick="checkA6('D')">The number of tasks is equal to the throughput divided by the response time.</button>
+        </div>
+    </div>
+     <div id="qContain">
+        <p>7</p>
+        <h1 id="question">Which of the following is <b>not</b> a potential problem caused by parallel access to shared data structures with locks on multiprocessor systems?</h1>
+        <div id="btnList">
+            <button id="AR7" class="btns" onclick="checkA7('A')">A lock on a shared data structure can become a bottleneck.</button>
+            <button id="BR7" class="btns" onclick="checkA7('B')">Shared data must be copied from one processor cache to another.</button>
+            <button id="CR7" class="btns" onclick="checkA7('C')">False sharing of multiple data structures in the same cache block.</button>
+            <button id="DG7" class="btns" onclick="checkA7('D')">Race conditions may occur when two threads access the shared data concurrently.</button>
+        </div>
+    </div>
+     <div id="qContain">
+        <p>8</p>
+        <h1 id="question">Which of the following refers to equal resource allocation for each task?</h1>
+        <div id="btnList">
+            <button id="AR8" class="btns" onclick="checkA8('A')">Response time</button>
+            <button id="BR8" class="btns" onclick="checkA8('B')">Predictability</button>
+            <button id="CR8" class="btns" onclick="checkA8('C')">Throughput</button>
+            <button id="DG8" class="btns" onclick="checkA8('D')">Fairness</button>
+        </div>
+    </div>
+     <div id="qContain">
+        <p>9</p>
+        <h1 id="question">Which of the following is not a necessary condition for deadlock?</h1>
+        <div id="btnList">
+            <button id="AG9" class="btns" onclick="checkA9('A')">Each thread is running on a different processor.</button>
+            <button id="BR9" class="btns" onclick="checkA9('B')">A thread can hold one resource while waiting for another resource.</button>
+            <button id="CR9" class="btns" onclick="checkA9('C')">Once a thread holds a resource, it's ownership can not be revoked.</button>
+            <button id="DR9" class="btns" onclick="checkA9('D')">A finite number of threads can simultaneously access a resource.</button>
+        </div>
+    </div>
+     <div id="qContain">
+        <p>10</p>
+        <h1 id="question">Event-driven programming is a form of which of the following lock design patterns?</h1>
+        <div id="btnList">
+            <button id="AR10" class="btns" onclick="checkA10('A')">Fine-grained locking</button>
+            <button id="BR10" class="btns" onclick="checkA10('B')">Per-processor data structures</button>
+            <button id="CR10" class="btns" onclick="checkA10('C')">The ownership design pattern</button>
+            <button id="DG10" class="btns" onclick="checkA10('D')">Staged architecture</button>
+        </div>
+    </div>
+    <div id="qContain">
+        <p>11</p>
+        <h1 id="question">In the Dining Philosophers problem, which of the following strategies eliminates cycles?</h1>
+        <div id="btnList">
+            <button id="AR11" class="btns" onclick="checkA11('A')">Every philosopher picks up their left fork first.</button>
+            <button id="BR11" class="btns" onclick="checkA11('B')">Every philosopher picks up their right fork first.</button>
+            <button id="CG11" class="btns" onclick="checkA11('C')">Every philosopher picks up their lower-numbered fork first.</button>
+            <button id="DR11" class="btns" onclick="checkA11('D')">Every philosopher puts down their left fork if their right is unavailable.</button>
+        </div>
+    </div>
+     <div id="qContain">
+        <p>12</p>
+        <h1 id="question">Which of the following scheduling policies is ideal for systems with real-time constraints?</h1>
+        <div id="btnList">
+            <button id="AR12" class="btns" onclick="checkA12('A')">First In First Out (FIFO)</button>
+            <button id="BG12" class="btns" onclick="checkA12('B')">Earliest Deadline First (EDF)</button>
+            <button id="CR12" class="btns" onclick="checkA12('C')">Shortest Job First (SJF)</button>
+            <button id="DR12" class="btns" onclick="checkA12('D')">Round Robin (RR)</button>
+        </div>
+    </div>
+     <div id="qContain">
+        <p>13</p>
+        <h1 id="question">In the Banker's Algorithm, what indicates an unsafe state?</h1>
+        <div id="btnList">
+            <button id="AR13" class="btns" onclick="checkA13('A')">For any possible set of resource requests, there is at least one ordering that does not lead to deadlock.</button>
+            <button id="BR13" class="btns" onclick="checkA13('B')">There is at least one set of resource requests that does not lead to deadlock regardless of the ordering.</button>
+            <button id="CR13" class="btns" onclick="checkA13('C')">For any possible set of resource requests, there is at least one ordering that leads to deadlock.</button>
+            <button id="DG13" class="btns" onclick="checkA13('D')">There is at least one set of resource requests that leads to deadlock regardless of the ordering.</button>
+        </div>
+    </div>
+     <div id="qContain">
+        <p>14</p>
+        <h1 id="question">How can transactions be used to recover from deadlock?</h1>
+        <div id="btnList">
+            <button id="AG14" class="btns" onclick="checkA14('A')">One or more of a thread's transactions is rolled back, so the other threads can make progress.</button>
+            <button id="BR14" class="btns" onclick="checkA14('B')">One or more of a thread's transactions is committed so that the thread performing the transaction can continue.</button>
+            <button id="CR14" class="btns" onclick="checkA14('C')">Threads continue to run without the resource that caused the deadlock.</button>
+            <button id="DR14" class="btns" onclick="checkA14('D')">One of the deadlocked threads is terminated, allowing the remaining threads to continue.</button>
+        </div>
+    </div>
+     <div id="qContain">
+        <p>15</p>
+        <h1 id="question">What is the main advantage of a Shortest Job First (SJF) scheduling policy over a First In First Out (FIFO) scheduling policy?</h1>
+        <div id="btnList">
+            <button id="AR15" class="btns" onclick="checkA15('A')">SJF is simplier to implement than FIFO</button>
+            <button id="BR15" class="btns" onclick="checkA15('B')">SJF prevents starvation</button>
+            <button id="CG15" class="btns" onclick="checkA15('C')">SJF minimizes average response time</button>
+            <button id="DR15" class="btns" onclick="checkA15('D')">SJF is more fair than FIFO</button>
+        </div>
+    </div>
+    <div id="qContain">
+        <p>16</p>
+        <h1 id="question">In queuing theory, which of the following can be computed as the smaller of the arrival rate and the service rate?</h1>
+        <div id="btnList">
+            <button id="AG16" class="btns" onclick="checkA16('A')">Throughput</button>
+            <button id="BR16" class="btns" onclick="checkA16('B')">Utilization</button>
+            <button id="CR16" class="btns" onclick="checkA16('C')">Number of tasks in the system</button>
+            <button id="DR16" class="btns" onclick="checkA16('D')">Response time</button>
+        </div>
+    </div>
+     <div id="qContain">
+        <p>17</p>
+        <h1 id="question">What happens if a task uses up its entire time quantum on a system using a multi-level feedback queue (MFQ)?</h1>
+        <div id="btnList">
+            <button id="AR17" class="btns" onclick="checkA17('A')">The task is allowed to continue running until it has completed.</button>
+            <button id="BR17" class="btns" onclick="checkA17('B')">The task moves up to a higher priority level.</button>
+            <button id="CR17" class="btns" onclick="checkA17('C')">The task stays at the same priority level.</button>
+            <button id="DG17" class="btns" onclick="checkA17('D')">The task moves down to a lower-priority level.</button>
+        </div>
+    </div>
+     <div id="qContain">
+        <p>18</p>
+        <h1 id="question">Which of the following best describes a deadlock?</h1>
+        <div id="btnList">
+            <button id="AR18" class="btns" onclick="checkA18('A')">Multiple threads modify data, leaving it in an inconsistent state.</button>
+            <button id="BR18" class="btns" onclick="checkA18('B')">A thread is made to wait until another thread performs an action.</button>
+            <button id="CG18" class="btns" onclick="checkA18('C')">A group of threads is waiting for an action that only one of the threads in the group can perform.</button>
+            <button id="DR18" class="btns" onclick="checkA18('D')">Threads take turns running on a processor until all threads have completed.</button>
+        </div>
+    </div>
+     <div id="qContain">
+        <p>19</p>
+        <h1 id="question">In queuing theory, when is a system overloaded?</h1>
+        <div id="btnList">
+            <button id="AR19" class="btns" onclick="checkA19('A')">When the arrival rate is less than the service rate.</button>
+            <button id="BG19" class="btns" onclick="checkA19('B')">When the arrival rate is greater than the service rate.</button>
+            <button id="CR19" class="btns" onclick="checkA19('C')">When the arrival rate is equal to the service rate.</button>
+            <button id="DR19" class="btns" onclick="checkA19('D')">None of the above.</button>
+        </div>
+    </div>
+     <div id="qContain">
+        <p>20</p>
+        <h1 id="question">If the multi-level feedback queue (MFQ) approach is used for scheduling multiple processors, which of the following results in the best performance?</h1>
+        <div id="btnList">
+            <button id="AR20" class="btns" onclick="checkA20('A')">One MFQ for each thread.</button>
+            <button id="BR20" class="btns" onclick="checkA20('B')">One MFQ for each process.</button>
+            <button id="CR20" class="btns" onclick="checkA20('C')">One centralized MFQ with a lock</button>
+            <button id="DG20" class="btns" onclick="checkA20('D')">One MFQ for each processor.</button>
+        </div>
+    </div>
+    <button onclick="topFunc()" id="topBtn" title="Go to top">TOP</button>
+	<button id="clearAll" onclick="clearAllBtns()">CLEAR</button>
+    <script src="Quiz_4.js"></script>
+</body>
+</html>

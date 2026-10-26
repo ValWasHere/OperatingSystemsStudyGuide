@@ -1,0 +1,71 @@
+body{
+    background-color: black;
+    color: silver;
+}
+#questionContainer{
+    margin: 20px;
+    padding: 20px;
+    background-color: #111;
+    border: 1px solid #333;
+    border-radius: 8px;
+}
+#GREEN{
+    color: lime;
+}
+#RED{
+    color: red;
+}
+.btns{
+    background-color: darkblue;
+    color: snow;
+    border: 2px solid silver;
+    margin: 8px 3px 8px 3px;
+}
+#outputContainer{
+    margin: 10px 3px 10px 3px;
+    padding: 6px 0px 6px 0px;
+}
+ #topBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: silver; /* Set a background color */
+  color: black; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+#topBtn:hover, #clearAll:hover {
+  background-color: rgb(32, 0, 121); /* Add a dark-grey background on hover */
+}
+#clearAll{
+    position: fixed;
+    right: 20px;
+    bottom: 80px;
+    z-index: 1000;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    background: gray;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+}
+#resetBtns{
+    position: fixed;
+    right: 20px;
+    bottom: 130px;
+    z-index: 1000;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    background: gray;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+}
