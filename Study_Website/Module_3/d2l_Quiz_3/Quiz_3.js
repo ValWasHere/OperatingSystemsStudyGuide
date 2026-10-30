@@ -1,209 +1,259 @@
 function checkAnswer1(answer){
-    const docOut = document.getElementById('outputDisplay1');
     if(answer == 'A'){
-        docOut.innerHTML = "DAMN, that ain't <b id=\"RED\">right...</b>"
+        document.getElementById('AR1').style.backgroundColor = "red";
+        document.getElementById('AR1').style.color = "black";
     }else if(answer == 'B'){
-        docOut.innerHTML = "Shiz Nips, that's <b id=\"RED\">wrong.</b>"
+        document.getElementById('BR1').style.backgroundColor = "red";
+        document.getElementById('BR1').style.color = "black";
     }else if(answer == 'C'){
-        docOut.innerHTML = "HEY, that's <b id=\"GREEN\">correct!</b>"
+        document.getElementById('CG1').style.backgroundColor = "lime";
+        document.getElementById('CG1').style.color = "black";
     }else{
-        docOut.innerHTML = "SIZZLE me timebers that's <b id=\"RED\">incorrect.</b>"
+        document.getElementById('DR1').style.backgroundColor = "red";
+        document.getElementById('DR1').style.color = "black";
     }
 }
 function checkAnswer2(answer){
-    const docOut = document.getElementById('outputDisplay2');
     if(answer == 'A'){
-        docOut.innerHTML = "DAMN, that is <b id=\"GREEN\">correct!</b>"
+        document.getElementById('AG2').style.backgroundColor = "lime";
+        document.getElementById('AG2').style.color = "black";
     }else if(answer == 'B'){
-        docOut.innerHTML = "Shiz Nips, that's <b id=\"RED\">wrong.</b>"
+        document.getElementById('BR2').style.backgroundColor = "red";
+        document.getElementById('BR2').style.color = "black";
     }
 }
 function checkAnswer3(answer){
-    const docOut = document.getElementById('outputDisplay3');
     if(answer == 'A'){
-        docOut.innerHTML = "DAMN, that <b id=\"RED\">ain't right...</b>"
+        document.getElementById('AR3').style.backgroundColor = "red";
+        document.getElementById('AR3').style.color = "black";
     }else if(answer == 'B'){
-        docOut.innerHTML = "Shiz Nips, 'Information about whether the thread is waiting for an event' is <b id=\"GREEN\">right.</b>"
+        document.getElementById('BG3').style.backgroundColor = "lime";
+        document.getElementById('BG3').style.color = "black";
     }else if(answer == 'C'){
-        docOut.innerHTML = "HEY, that's <b id=\"RED\">incorrect!</b>"
+        document.getElementById('CR3').style.backgroundColor = "red";
+        document.getElementById('CR3').style.color = "black";
     }else{
-        docOut.innerHTML = "SIZZLE me timebers that's <b id=\"RED\">incorrect.</b>"
+        document.getElementById('DR3').style.backgroundColor = "red";
+        document.getElementById('DR3').style.color = "black";
     }
 }
 function checkAnswer4(answer){
-    const docOut = document.getElementById('outputDisplay4');
     if(answer == 'A'){
-        docOut.innerHTML = "DAMN, thread_create is <b id=\"GREEN\">CORRECT</b>!"
+        document.getElementById('AG4').style.backgroundColor = "lime";
+        document.getElementById('AG4').style.color = "black";
     }else if(answer == 'B'){
-        docOut.innerHTML = "Shiz Nips, <b id=\"RED\">that's wrong.</b>"
+        document.getElementById('BR4').style.backgroundColor = "red";
+        document.getElementById('BR4').style.color = "black";
     }else if(answer == 'C'){
-        docOut.innerHTML = "HEY, <b id=\"RED\">that's INcorrect!</b>"
+        document.getElementById('CR4').style.backgroundColor = "red";
+        document.getElementById('CR4').style.color = "black";
     }else{
-        docOut.innerHTML = "SIZZLE me timebers <b id=\"RED\">that's incorrect.</b>"
+        document.getElementById('DR4').style.backgroundColor = "red";
+        document.getElementById('DR4').style.color = "black";
     }
 }
 function checkAnswer5(answer){
-    const docOut = document.getElementById('outputDisplay5');
     if(answer == 'A'){
-        docOut.innerHTML = "DAMN, that <b id=\"WRONG\">ain't right...</b>"
+        document.getElementById('AR5').style.backgroundColor = "red";
+        document.getElementById('AR5').style.color = "black";
     }else if(answer == 'B'){
-        docOut.innerHTML = "Shiz Nips, that's <b id=\"WRONG\">wrong</b>."
+        document.getElementById('BR5').style.backgroundColor = "red";
+        document.getElementById('BR5').style.color = "black";
     }else if(answer == 'C'){
-        docOut.innerHTML = "CRUD, 'A thread can be suspended at any time regardless of what the thread is doing is <b id=\"GREEN\">correct</b>!"
+        document.getElementById('CG5').style.backgroundColor = "lime";
+        document.getElementById('CG5').style.color = "black";
     }else{
-        docOut.innerHTML = "SIZZLE me timebers that's <b id=\"WRONG\">incorrect.</b>"
+        document.getElementById('DR5').style.backgroundColor = "red";
+        document.getElementById('DR5').style.color = "black";
     }
 }
 function checkAnswer6(answer){
-    const docOut = document.getElementById('outputDisplay6');
     if(answer == 'A'){
-        docOut.innerHTML = "DAMN, true <b id=\"GREEN\">IS CORRECT</b>"
+        document.getElementById('AG6').style.backgroundColor = "lime";
+        document.getElementById('AG6').style.color = "black";
     }else if(answer == 'B'){
-        docOut.innerHTML = "HOLY COW, false is <b id=\"RED\">INCORRECT</b> "
+        document.getElementById('BR6').style.backgroundColor = "red";
+        document.getElementById('BR6').style.color = "black";
     }
 }
 function checkAnswer7(answer){
-    const docOut = document.getElementById('outputDisplay7');
     if(answer == 'A'){
-        docOut.innerHTML = "DAMN, 'It improves the security of a system' is the <b id=\"GREEN\">NOT</b> a good reason to use concurrency!"
+        document.getElementById('AG7').style.backgroundColor = "lime";
+        document.getElementById('AG7').style.color = "black";
     }else if(answer == 'B'){
-        docOut.innerHTML = "Shiz Nips, that's <b id=\"RED\">wrong.</b>"
+        document.getElementById('BR7').style.backgroundColor = "red";
+        document.getElementById('BR7').style.color = "black";
     }else if(answer == 'C'){
-        docOut.innerHTML = "HEY, that's <b id=\"RED\">incorrect!</b>"
+        document.getElementById('CR7').style.backgroundColor = "red";
+        document.getElementById('CR7').style.color = "black";
     }else{
-        docOut.innerHTML = "SIZZLE me timebers that's <b id=\"RED\">incorrect.</b>"
+        document.getElementById('DR7').style.backgroundColor = "red";
+        document.getElementById('DR7').style.color = "black";
     }
 }
 function checkAnswer8(answer){
-    const docOut = document.getElementById('outputDisplay8');
     if(answer == 'A'){
-        docOut.innerHTML = "DAMN, that ain't right... <b id=\"RED\">WRONG</b>"
+        document.getElementById('AR8').style.backgroundColor = "red";
+        document.getElementById('AR8').style.color = "black";
     }else if(answer == 'B'){
-        docOut.innerHTML = "Shiz Nips, that's <b id=\"RED\">wrong.</b>"
+        document.getElementById('BR8').style.backgroundColor = "red";
+        document.getElementById('BR8').style.color = "black";
     }else if(answer == 'C'){
-        docOut.innerHTML = "HEY, 'Multi-threaded user processes'<b id=\"GREEN\"> is correct!</b>"
+        document.getElementById('CG8').style.backgroundColor = "lime";
+        document.getElementById('CG8').style.color = "black";
     }else{
-        docOut.innerHTML = "SIZZLE me timebers that's <b id=\"RED\">incorrect.</b>"
+        document.getElementById('DR8').style.backgroundColor = "red";
+        document.getElementById('DR8').style.color = "black";
     }
 }
 function checkAnswer9(answer){
-    const docOut = document.getElementById('outputDisplay9');
     if(answer == 'A'){
-        docOut.innerHTML = "DAMN, that ain't right... <b id=\"RED\">WRONG</b>"
+        document.getElementById('AR9').style.backgroundColor = "red";
+        document.getElementById('AR9').style.color = "black";
     }else if(answer == 'B'){
-        docOut.innerHTML = "Shiz Nips, that's <b id=\"RED\">wrong.</b>"
+        document.getElementById('BR9').style.backgroundColor = "red";
+        document.getElementById('BR9').style.color = "black";
     }else if(answer == 'C'){
-        docOut.innerHTML = "HEY, that's <b id=\"RED\">incorrect!</b>"
+        document.getElementById('CR9').style.backgroundColor = "red";
+        document.getElementById('CR9').style.color = "black";
     }else{
-        docOut.innerHTML = "'A shared object used to buffer items so that they are removed in a strict order.' is <b id=\"GREEN\">correct!</b>"
+        document.getElementById('DG9').style.backgroundColor = "lime";
+        document.getElementById('DG9').style.color = "black";
     }
 }
 function checkAnswer10(answer){
-    const docOut = document.getElementById('outputDisplay10');
     if(answer == 'A'){
-        docOut.innerHTML = "DAMN, that ain't <b id=\"RED\">right...</b>"
+        document.getElementById('AR10').style.backgroundColor = "red";
+        document.getElementById('AR10').style.color = "black";
     }else if(answer == 'B'){
-        docOut.innerHTML = "Shiz Nips, that's <b id=\"RED\">wrong.</b>"
+        document.getElementById('BR10').style.backgroundColor = "red";
+        document.getElementById('BR10').style.color = "black";
     }else if(answer == 'C'){
-        docOut.innerHTML = "HEY, 'A multiprocessor lock that uses an atomic read-modify-write operation to maintain a state variable.' is <b id=\"GREEN\">correct!</b>"
+        document.getElementById('CG10').style.backgroundColor = "lime";
+        document.getElementById('CG10').style.color = "black";
     }else{
-        docOut.innerHTML = "SIZZLE me timebers that's <b id=\"RED\">incorrect.</b>"
+        document.getElementById('DG10').style.backgroundColor = "red";
+        document.getElementById('DG10').style.color = "black";
     }
 }
 function checkAnswer11(answer){
-    const docOut = document.getElementById('outputDisplay11');
     if(answer == 'A'){
-        docOut.innerHTML = "DAMN, that <b id=\"RED\">ain't right...</b>"
+        document.getElementById('AR11').style.backgroundColor = "red";
+        document.getElementById('AR11').style.color = "black";
     }else if(answer == 'B'){
-        docOut.innerHTML = "Shiz Nips, that's <b id=\"RED\">wrong."
+        document.getElementById('BR11').style.backgroundColor = "red";
+        document.getElementById('BR11').style.color = "black";
     }else if(answer == 'C'){
-        docOut.innerHTML = "Yes, '1200, 1500, or 1700' is <b id=\"GREEN\">correct!</b>"
+        document.getElementById('CG11').style.backgroundColor = "lime";
+        document.getElementById('CG11').style.color = "black";
     }else{
-        docOut.innerHTML = "SIZZLE me timebers that's <b id=\"RED\">incorrect.</b>"
+        document.getElementById('DR11').style.backgroundColor = "red";
+        document.getElementById('DR11').style.color = "black";
     }
 }
 function checkAnswer12(answer){
-    const docOut = document.getElementById('outputDisplay12');
     if(answer == 'A'){
-        docOut.innerHTML = "DAMN, that ain't <b id=\"RED\">right...</b>"
+        document.getElementById('AR12').style.backgroundColor = "red";
+        document.getElementById('AR12').style.color = "black";
     }else if(answer == 'B'){
-        docOut.innerHTML = "Shiz Nips, that's <b id=\"RED\">wrong.</b>"
+        document.getElementById('BR12').style.backgroundColor = "red";
+        document.getElementById('BR12').style.color = "black";
     }else if(answer == 'C'){
-        docOut.innerHTML = "HEY, that's <b id=\"GREEN\">correct!</b>"
+        document.getElementById('CG12').style.backgroundColor = "lime";
+        document.getElementById('CG12').style.color = "black";
     }else{
-        docOut.innerHTML = "SIZZLE me timebers that's <b id=\"RED\">incorrect.</b>"
+        document.getElementById('DR12').style.backgroundColor = "red";
+        document.getElementById('DR12').style.color = "black";
     }
 }
 function checkAnswer13(answer){
-    const docOut = document.getElementById('outputDisplay13');
     if(answer == 'A'){
-        docOut.innerHTML = "DAMN, that ain't <b id=\"RED\">right...</b>"
+        document.getElementById('AR13').style.backgroundColor = "red";
+        document.getElementById('AR13').style.color = "black";
     }else if(answer == 'B'){
-        docOut.innerHTML = "HOLY MOLY, 'Kernel thread synchronization does not require any mode switches' is the <b id=\"GREEN\">correct choice!</b>"
+        document.getElementById('BG13').style.backgroundColor = "lime";
+        document.getElementById('BG13').style.color = "black";
     }else if(answer == 'C'){
-        docOut.innerHTML = "HEY, that's <b id=\"RED\">incorrect choice!</b>"
+        document.getElementById('CR13').style.backgroundColor = "red";
+        document.getElementById('CR13').style.color = "black";
     }else{
-        docOut.innerHTML = "SIZZLE me timebers that's <b id=\"RED\">incorrect.</b>"
+        document.getElementById('DR13').style.backgroundColor = "red";
+        document.getElementById('DR13').style.color = "black";
     }
 }
 function checkAnswer14(answer){
-    const docOut = document.getElementById('outputDisplay14');
     if(answer == 'A'){
-        docOut.innerHTML = "DAMN, 'acquire' is <b id=\"GREEN\">right...</b>"
+        document.getElementById('AG14').style.backgroundColor = "lime";
+        document.getElementById('AG14').style.color = "black";
     }else if(answer == 'B'){
-        docOut.innerHTML = "Shiz Nips, that's <b id=\"RED\">wrong.</b>"
+        document.getElementById('BR14').style.backgroundColor = "red";
+        document.getElementById('BR14').style.color = "black";
     }else if(answer == 'C'){
-        docOut.innerHTML = "HEY, that's <b id=\"RED\">incorrect!</b>"
+        document.getElementById('CR14').style.backgroundColor = "red";
+        document.getElementById('CR14').style.color = "black";
     }else{
-        docOut.innerHTML = "SIZZLE me timebers that's <b id=\"RED\">incorrect.</b>"
+        document.getElementById('DR14').style.backgroundColor = "red";
+        document.getElementById('DR14').style.color = "black";
     }
 }
 function checkAnswer15(answer){
-    const docOut = document.getElementById('outputDisplay15');
     if(answer == 'A'){
-        docOut.innerHTML = "DAMN, that <b id=\"RED\">ain't right...</b>"
+        document.getElementById('AR15').style.backgroundColor = "red";
+        document.getElementById('AR15').style.color = "black";
     }else if(answer == 'B'){
-        docOut.innerHTML = "JIMNEY CRICKETS, 'A waiting thread made by signal is guaranteed to run immediately' is the <b id=\"GREEN\">correct choice!</b>"
+        document.getElementById('BG15').style.backgroundColor = "lime";
+        document.getElementById('BG15').style.color = "black";
     }else if(answer == 'C'){
-        docOut.innerHTML = "HEY, that's <b id=\"RED\">incorrect!</b>"
+        document.getElementById('CR15').style.backgroundColor = "red";
+        document.getElementById('CR15').style.color = "black";
     }else{
-        docOut.innerHTML = "SIZZLE me timebers that's <b id=\"RED\">incorrect.</b>"
+        document.getElementById('DR15').style.backgroundColor = "red";
+        document.getElementById('DR15').style.color = "black";
     }
 }
 function checkAnswer16(answer){
-    const docOut = document.getElementById('outputDisplay16');
     if(answer == 'A'){
-        docOut.innerHTML = "YAY, 'A lock should be acquired at the beginning of every public method and released at the end of every public method' is the <b id=\"GREEN\">correct choice!</b>"
+        document.getElementById('AG16').style.backgroundColor = "lime";
+        document.getElementById('AG16').style.color = "black";
     }else if(answer == 'B'){
-        docOut.innerHTML = "Shiz Nips, that's <b id=\"RED\">wrong.</b>"
+        document.getElementById('BR16').style.backgroundColor = "red";
+        document.getElementById('BR16').style.color = "black";
     }else if(answer == 'C'){
-        docOut.innerHTML = "HEY, that's <b id=\"RED\">incorrect!</b>"
+        document.getElementById('CR16').style.backgroundColor = "red";
+        document.getElementById('CR16').style.color = "black";
     }else{
-        docOut.innerHTML = "SIZZLE me timebers that's <b id=\"RED\">incorrect.</b>"
+        document.getElementById('DR16').style.backgroundColor = "red";
+        document.getElementById('DR16').style.color = "black";
     }
 }
 function checkAnswer17(answer){
-    const docOut = document.getElementById('outputDisplay17');
     if(answer == 'A'){
-        docOut.innerHTML = "DAMN, that <b id=\"RED\">ain't right...</b>"
+        document.getElementById('AR17').style.backgroundColor = "red";
+        document.getElementById('AR17').style.color = "black";
     }else if(answer == 'B'){
-        docOut.innerHTML = "signal is <b id=\"GREEN\">correct!</b>"
+        document.getElementById('BG17').style.backgroundColor = "lime";
+        document.getElementById('BG17').style.color = "black";
     }else if(answer == 'C'){
-        docOut.innerHTML = "HEY, that's <b id=\"RED\">incorrect!</b>"
+        document.getElementById('CR17').style.backgroundColor = "red";
+        document.getElementById('CR17').style.color = "black";
     }else{
-        docOut.innerHTML = "SIZZLE me timebers that's <b id=\"RED\">incorrect.</b>"
+        document.getElementById('DR17').style.backgroundColor = "red";
+        document.getElementById('DR17').style.color = "black";
     }
 }
 function checkAnswer18(answer){
-    const docOut = document.getElementById('outputDisplay18');
     if(answer == 'A'){
-        docOut.innerHTML = "DAMN, that <b id=\"RED\">ain't right...</b>"
+        document.getElementById('AR18').style.backgroundColor = "red";
+        document.getElementById('AR18').style.color = "black";
     }else if(answer == 'B'){
-        docOut.innerHTML = "Shiz Nips, that's <b id=\"RED\">wrong.</b>"
+        document.getElementById('BR18').style.backgroundColor = "red";
+        document.getElementById('BR18').style.color = "black";
     }else if(answer == 'C'){
-        docOut.innerHTML = "HEY, that's <b id=\"GREEN\">correct!</b>"
+        document.getElementById('CG18').style.backgroundColor = "lime";
+        document.getElementById('CG18').style.color = "black";
     }else{
-        docOut.innerHTML = "SIZZLE me timebers that's <b id=\"RED\">incorrect.</b>"
+        document.getElementById('DR18').style.backgroundColor = "red";
+        document.getElementById('DR18').style.color = "black";
     }
 }
 function checkAnswer19(answer){

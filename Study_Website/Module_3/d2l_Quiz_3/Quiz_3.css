@@ -33,33 +33,20 @@ body{
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: silver; /* Set a background color */
+  background-color: gray; /* Set a background color */
   color: black; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
   border-radius: 10px; /* Rounded corners */
   font-size: 18px; /* Increase font size */
 }
-#topBtn:hover, #clearAll:hover {
+#topBtn:hover, #resetBtns:hover {
   background-color: rgb(32, 0, 121); /* Add a dark-grey background on hover */
-}
-#clearAll{
-    position: fixed;
-    right: 20px;
-    bottom: 80px;
-    z-index: 1000;
-    padding: 10px 16px;
-    border: none;
-    border-radius: 6px;
-    background: gray;
-    color: black;
-    font-size: 16px;
-    cursor: pointer;
 }
 #resetBtns{
     position: fixed;
     right: 20px;
-    bottom: 130px;
+    bottom: 100px;
     z-index: 1000;
     padding: 10px 16px;
     border: none;

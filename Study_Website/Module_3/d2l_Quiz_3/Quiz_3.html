@@ -17,107 +17,97 @@
 		<p>1</p>
 	  	<h1 id="questionPrompt">When an event occurs that a thread is waiting for, how does the thread's state change?</h1>
 		<div id="buttonList">
-			<button id="btn" onclick="checkAnswer1('A')">FROM WAITING to RUNNING.</button>
-			<button id="btn" onclick="checkAnswer1('B')">From RUNNING to WAITING.</button>
-			<button id="btn" onclick="checkAnswer1('C')">From WAITING to READY.</button>
-			<button id="btn" onclick="checkAnswer1('D')">From READY to RUNNING</button>
+			<button id="AR1" class="btns" onclick="checkAnswer1('A')">FROM WAITING to RUNNING.</button>
+			<button id="BR1" class="btns" onclick="checkAnswer1('B')">From RUNNING to WAITING.</button>
+			<button id="CG1" class="btns" onclick="checkAnswer1('C')">From WAITING to READY.</button>
+			<button id="DR1" class="btns" onclick="checkAnswer1('D')">From READY to RUNNING</button>
 		</div>
-		<div id="outputContainer"><div id="outputDisplay1" class="outputStyle">Was it the right answer?</div></div>
 	  </div>
 	  <div id="questionContainer">
 		<p>2</p>
 	  	<h1 id="questionPrompt">Multi-threaded processes can be implemented without kernel support beyond the use of upcalls.</h1>
 		<div id="buttonList">
-			<button id="btn" onclick="checkAnswer2('A')">True</button>
-			<button id="btn" onclick="checkAnswer2('B')">False</button>
+			<button id="AG2" class="btns" onclick="checkAnswer2('A')">True</button>
+			<button id="BR2" class="btns" onclick="checkAnswer2('B')">False</button>
 		</div>
-		<div id="outputContainer"><div id="outputDisplay2" class="outputStyle">Was it the right answer?</div></div>
 	  </div>
 	  <div id="questionContainer">
 		<p>3</p>
 	  	<h1 id="questionPrompt">Which of the following is an example of per-thread metadata?</h1>
 		<div id="buttonList">
-			<button id="btn" onclick="checkAnswer3('A')">A pointer to the stack that belongs to the thread.</button>
-			<button id="btn" onclick="checkAnswer3('B')">Information about whether the thread is waiting for an event.</button>
-			<button id="btn" onclick="checkAnswer3('C')">The code that the thread runs.</button>
-			<button id="btn" onclick="checkAnswer3('D')">Global variables.</button>
+			<button id="AR3" class="btns" onclick="checkAnswer3('A')">A pointer to the stack that belongs to the thread.</button>
+			<button id="BG3" class="btns" onclick="checkAnswer3('B')">Information about whether the thread is waiting for an event.</button>
+			<button id="CR3" class="btns" onclick="checkAnswer3('C')">The code that the thread runs.</button>
+			<button id="DR3" class="btns" onclick="checkAnswer3('D')">Global variables.</button>
 		</div>
-		<div id="outputContainer"><div id="outputDisplay3" class="outputStyle">Was it the right answer?</div></div>
 	  </div>
 	  <div id="questionContainer">
 		<p>4</p>
 	  	<h1 id="questionPrompt">Which of the following operations does <b>not</b> suspend the calling thread?</h1>
 		<div id="buttonList">
-			<button id="btn" onclick="checkAnswer4('A')">thread_create</button>
-			<button id="btn" onclick="checkAnswer4('B')">thread_yield</button>
-			<button id="btn" onclick="checkAnswer4('C')">thread_join</button>
-			<button id="btn" onclick="checkAnswer4('D')">thread_exit</button>
+			<button id="AG4" class="btns" onclick="checkAnswer4('A')">thread_create</button>
+			<button id="BR4" class="btns" onclick="checkAnswer4('B')">thread_yield</button>
+			<button id="CR4" class="btns" onclick="checkAnswer4('C')">thread_join</button>
+			<button id="DR4" class="btns" onclick="checkAnswer4('D')">thread_exit</button>
 		</div>
-		<div id="outputContainer"><div id="outputDisplay4" class="outputStyle">was it the right answer?</div></div>
 	  </div>
 	  <div id="questionContainer">
 		<p>5</p>
 		<h1 id="questionPrompt">Which of the following assumptions is safe to make when programming with thread?</h1>
 		<div id="buttonList">
-			<button id="btn" onclick="checkAnswer5('A')">The amount of time it takes for operations to complete is determined entirely by the code a thread is running.</button>
-			<button id="btn" onclick="checkAnswer5('B')">The operations performed by a multi-threaded program will always be executed in the same order.</button>
-			<button id="btn" onclick="checkAnswer5('C')">A thread can be suspended at any time regardless of what the thread is doing.</button>
-			<button id="btn" onclick="checkAnswer5('D')">If a thread yields the processor it is running on, it knows which thread will run next.</button>
+			<button id="AR5" class="btns" onclick="checkAnswer5('A')">The amount of time it takes for operations to complete is determined entirely by the code a thread is running.</button>
+			<button id="BR5" class="btns" onclick="checkAnswer5('B')">The operations performed by a multi-threaded program will always be executed in the same order.</button>
+			<button id="CG5" class="btns" onclick="checkAnswer5('C')">A thread can be suspended at any time regardless of what the thread is doing.</button>
+			<button id="DR5" class="btns" onclick="checkAnswer5('D')">If a thread yields the processor it is running on, it knows which thread will run next.</button>
 		</div>
-		<div id="outputContainer"><div id="outputDisplay5" class="outputStyle">was it the right answer?</div></div>
 	  </div>
 	  <div id="questionContainer">
 		<p>6</p>
 		<h1 id="questionPrompt">The choice of which thread to schedule next is a matter of thread scheduling policy, which is independent of the mechanism used to switch between threads.</h1>
 		<div id="buttonList">
-			<button id="btn" onclick="checkAnswer6('A')">True</button>
-			<button id="btn" onclick="checkAnswer6('B')">False</button>
-		<div id="outputContainer"><div id="outputDisplay6" class="outputStyle">was it the right answer?</div></div>
+			<button id="AG6" class="btns" onclick="checkAnswer6('A')">True</button>
+			<button id="BR6" class="btns" onclick="checkAnswer6('B')">False</button>
 	  	</div>
 	  </div>
 	  <div id="questionContainer">
 		<p>7</p>
 		<h1 id="questionPrompt">Which of the following is <b>not</b> a good reason to use concurrency?</h1>
 		<div id="buttonList">
-			<button id="btn" onclick="checkAnswer7('A')">It improves the security of a system.</button>
-			<button id="btn" onclick="checkAnswer7('B')">It improves the responsiveness of user interfaces.</button>
-			<button id="btn" onclick="checkAnswer7('C')">It helps mask the latency of disk and network operations.</button>
-			<button id="btn" onclick="checkAnswer7('D')">It improves overall system performance.</button>
+			<button id="AG7" class="btns" onclick="checkAnswer7('A')">It improves the security of a system.</button>
+			<button id="BR7" class="btns" onclick="checkAnswer7('B')">It improves the responsiveness of user interfaces.</button>
+			<button id="CR7" class="btns" onclick="checkAnswer7('C')">It helps mask the latency of disk and network operations.</button>
+			<button id="DR7" class="btns" onclick="checkAnswer7('D')">It improves overall system performance.</button>
 		</div>
-		<div id="outputContainer"><div id="outputDisplay7" class="outputStyle">Was it the right answer?</div></div>
 	  </div>
 	  <div id="questionContainer">
 		<p>8</p>
 	  	<h1 id="questionPrompt">Which of the following approaches uses multiple kernel threads to support multiple user threads sharing the same address space?</h1>
 		<div id="buttonList">
-			<button id="btn" onclick="checkAnswer8('A')">Kernel threads.</button>
-			<button id="btn" onclick="checkAnswer8('B')">Single-threaded user processes.</button>
-			<button id="btn" onclick="checkAnswer8('C')">Multi-threaded user processes.</button>
-			<button id="btn" onclick="checkAnswer8('D')">User-level threads.</button>
+			<button id="AR8" class="btns" onclick="checkAnswer8('A')">Kernel threads.</button>
+			<button id="BR8" class="btns" onclick="checkAnswer8('B')">Single-threaded user processes.</button>
+			<button id="CG8" class="btns" onclick="checkAnswer8('C')">Multi-threaded user processes.</button>
+			<button id="DR8" class="btns" onclick="checkAnswer8('D')">User-level threads.</button>
 		</div>
-		<div id="outputContainer"><div id="outputDisplay8" class="outputStyle">Was it the right answer?</div></div>
 	  </div>
 	  <div id="questionContainer">
 		<p>9</p>
 	  	<h1 id="questionPrompt">Which of the following best describes a FIFO Blocking Bounded Queue?</h1>
 		<div id="buttonList">
-			<button id="btn" onclick="checkAnswer9('A')">A synchronization object that provides mutual exclusion.</button>
-			<button id="btn" onclick="checkAnswer9('B')">A synchronization object used by threads to wait for a condition to be true.</button>
-			<button id="btn" onclick="checkAnswer9('C')">A shared object used to make a thread wait for the rest of a set of threads to complete a task.</button>
-			<button id="btn" onclick="checkAnswer9('D')">A shared object used to buffer items so that they are removed in a strict order.</button>
+			<button id="AR9" class="btns" onclick="checkAnswer9('A')">A synchronization object that provides mutual exclusion.</button>
+			<button id="BR9" class="btns" onclick="checkAnswer9('B')">A synchronization object used by threads to wait for a condition to be true.</button>
+			<button id="CR9" class="btns" onclick="checkAnswer9('C')">A shared object used to make a thread wait for the rest of a set of threads to complete a task.</button>
+			<button id="DG9" class="btns" onclick="checkAnswer9('D')">A shared object used to buffer items so that they are removed in a strict order.</button>
 		</div>
-		<div id="outputContainer"><div id="outputDisplay9" class="outputStyle">Was it the right answer?</div></div>
 	  </div>
 	  <div id="questionContainer">
 		<p>10</p>
 	  	<h1 id="questionPrompt">Which of the following best describes a spinlock?</h1>
 		<div id="buttonList">
-			<button id="btn" onclick="checkAnswer10('A')">A uniprocessor lock that disables interrupts when it is acquired and enables them when it is released.</button>
-			<button id="btn" onclick="checkAnswer10('B')">A uniprocessor lock that maintains a state variable and a waiting list.</button>
-			<button id="btn" onclick="checkAnswer10('C')">A multiprocessor lock that uses an atomic read-modify-write operation to maintain a state variable.</button>
-			<button id="btn" onclick="checkAnswer10('D')">A multiprocessor lock that maintains a state variable and a waiting list.</button>
+			<button id="AR10" class="btns" onclick="checkAnswer10('A')">A uniprocessor lock that disables interrupts when it is acquired and enables them when it is released.</button>
+			<button id="BR10" class="btns" onclick="checkAnswer10('B')">A uniprocessor lock that maintains a state variable and a waiting list.</button>
+			<button id="CG10" class="btns" onclick="checkAnswer10('C')">A multiprocessor lock that uses an atomic read-modify-write operation to maintain a state variable.</button>
+			<button id="DG10" class="btns" onclick="checkAnswer10('D')">A multiprocessor lock that maintains a state variable and a waiting list.</button>
 		</div>
-		<div id="outputContainer"><div id="outputDisplay10" class="outputStyle">was it the right answer?</div></div>
 	  </div>
 	  <div id="questionContainer">
 		<p>11</p>
@@ -131,89 +121,81 @@
 			What are the possible values of balance after both threads complete?
 		</h1>
 		<div id="buttonList">
-			<button id="btn" onclick="checkAnswer11('A')">1700</button>
-			<button id="btn" onclick="checkAnswer11('B')">1200 or 1500</button>
-			<button id="btn" onclick="checkAnswer11('C')">1200, 1500, or 1700</button>
-			<button id="btn" onclick="checkAnswer11('D')">0, 1200, 1500, or 1700</button>
+			<button id="AR11" class="btns" onclick="checkAnswer11('A')">1700</button>
+			<button id="BR11" class="btns" onclick="checkAnswer11('B')">1200 or 1500</button>
+			<button id="CG11" class="btns" onclick="checkAnswer11('C')">1200, 1500, or 1700</button>
+			<button id="DR11" class="btns" onclick="checkAnswer11('D')">0, 1200, 1500, or 1700</button>
 		</div>
-		<div id="outputContainer"><div id="outputDisplay11" class="outputStyle">was it the right answer?</div></div>
 	  </div>
 	  <div id="questionContainer">
 		<p>12</p>
 		<h1 id="questionPrompt">What is a race condition?</h1>
 		<div id="buttonList">
-			<button id="btn" onclick="checkAnswer12('A')">A synchronization variable that provides mutual exclusion.</button>
-			<button id="btn" onclick="checkAnswer12('B')">A synchronization variable that is used to make a thread wait until a condition holds.</button>
-			<button id="btn" onclick="checkAnswer12('C')">A situation where the behavior of a program depends on the order in which different thread operations are performed.</button>
-			<button id="btn" onclick="checkAnswer12('D')">A situation where multiple threads operate independently without sharing any state.</button>
+			<button id="AR12" class="btns" onclick="checkAnswer12('A')">A synchronization variable that provides mutual exclusion.</button>
+			<button id="BR12" class="btns" onclick="checkAnswer12('B')">A synchronization variable that is used to make a thread wait until a condition holds.</button>
+			<button id="CG12" class="btns" onclick="checkAnswer12('C')">A situation where the behavior of a program depends on the order in which different thread operations are performed.</button>
+			<button id="DR12" class="btns" onclick="checkAnswer12('D')">A situation where multiple threads operate independently without sharing any state.</button>
 		</div>
-		<div id="outputContainer"><div id="outputDisplay12" class="outputStyle">was it the right answer?</div></div>
 	  </div>
 	  <div id="questionContainer">
 		<p>13</p>
 		<h1 id="questionPrompt">What is the difference between user thread synchronization and kernel thread synchronization?</h1>
 		<div id="buttonList">
-			<button id="btn" onclick="checkAnswer13('A')">Kernel thread synchronization uses uniprocessor locks while user thread synchronization uses multiprocessor locks.</button>
-			<button id="btn" onclick="checkAnswer13('B')">Kernel thread synchronization does not require any mode switches.</button>
-			<button id="btn" onclick="checkAnswer13('C')">Kernel thread synchronization can't suspend interrupts, so it suspends upcalls instead.</button>
-			<button id="btn" onclick="checkAnswer13('D')">Kernel threads used system calls to interact with synchronization objects.</button>
+			<button id="AR13" class="btns" onclick="checkAnswer13('A')">Kernel thread synchronization uses uniprocessor locks while user thread synchronization uses multiprocessor locks.</button>
+			<button id="BG13" class="btns" onclick="checkAnswer13('B')">Kernel thread synchronization does not require any mode switches.</button>
+			<button id="CR13" class="btns" onclick="checkAnswer13('C')">Kernel thread synchronization can't suspend interrupts, so it suspends upcalls instead.</button>
+			<button id="DR13" class="btns" onclick="checkAnswer13('D')">Kernel threads used system calls to interact with synchronization objects.</button>
 		</div>
-		<div id="outputContainer"><div id="outputDisplay13" class="outputStyle">was it the right answer?</div></div>
 	  </div>
 	  <div id="questionContainer">
 		<p>14</p>
 		<h1 id="questionPrompt">Which of the following operations may move a thread from RUNNING state to the WAITING state?</h1>
 		<div id="buttonList">
-			<button id="btn" onclick="checkAnswer14('A')">acquire</button>
-			<button id="btn" onclick="checkAnswer14('B')">release</button>
-			<button id="btn" onclick="checkAnswer14('C')">signal</button>
-			<button id="btn" onclick="checkAnswer14('D')">broadcast</button>
+			<button id="AG14" class="btns" onclick="checkAnswer14('A')">acquire</button>
+			<button id="BR14" class="btns" onclick="checkAnswer14('B')">release</button>
+			<button id="CR14" class="btns" onclick="checkAnswer14('C')">signal</button>
+			<button id="DR14" class="btns" onclick="checkAnswer14('D')">broadcast</button>
 		</div>
-		<div id="outputContainer"><div id="outputDisplay14" class="outputStyle">was it the right answer?</div></div>
 	  </div>
 	  <div id="questionContainer">
 		<p>15</p>
 		<h1 id="questionPrompt">Which of the following properties does not need to be maintained by a Mesa-style condition variable?</h1>
 		<div id="buttonList">
-			<button id="btn" class="btns" onclick="checkAnswer15('A')">The wait operation atomically releases the lock.</button>
-			<button id="btn" class="btns" onclick="checkAnswer15('B')">A waiting thread made ready by signal is guaranteed to run immediately.</button>
-			<button id="btn" class="btns" onclick="checkAnswer15('C')">A waiting thread made ready by broadcast may not run immediately.</button>
-			<button id="btn" class="btns" onclick="checkAnswer15('D')">The only state maintained is the queue of running threads.</button>
+			<button id="AR15" class="btns" onclick="checkAnswer15('A')">The wait operation atomically releases the lock.</button>
+			<button id="BG15" class="btns" onclick="checkAnswer15('B')">A waiting thread made ready by signal is guaranteed to run immediately.</button>
+			<button id="CR15" class="btns" onclick="checkAnswer15('C')">A waiting thread made ready by broadcast may not run immediately.</button>
+			<button id="DR15" class="btns" onclick="checkAnswer15('D')">The only state maintained is the queue of running threads.</button>
 		</div>
-		<div id="outputContainer"><div id="outputDisplay15" class="outputStyle">was it the right answer?</div></div>
 	  </div>
 	  <div id="questionContainer">
 		<p>16</p>
 		<h1 id="questionPrompt">When implementing a shared object, when should a lock be acquired and released?</h1>
 		<div id="buttonList">
-			<button id="btn" class="btns" onclick="checkAnswer16('A')">A lock should be acquired at the beginning of every public method and released at the end of every public method.</button>
-			<button id="btn" class="btns" onclick="checkAnswer16('B')">A lock can be acquired at any time in a method as long as it is released at the end.</button>
-			<button id="btn" class="btns" onclick="checkAnswer16('C')">A lock can be released at any time in a method as long as it is acquired at the beginning.</button>
-			<button id="btn" class="btns" onclick="checkAnswer16('D')">A lock must be acquired before it is released, but otherwise both operations can be used at any point in the method.</button>
+			<button id="AG16" class="btns" onclick="checkAnswer16('A')">A lock should be acquired at the beginning of every public method and released at the end of every public method.</button>
+			<button id="BR16" class="btns" onclick="checkAnswer16('B')">A lock can be acquired at any time in a method as long as it is released at the end.</button>
+			<button id="CR16" class="btns" onclick="checkAnswer16('C')">A lock can be released at any time in a method as long as it is acquired at the beginning.</button>
+			<button id="DR16" class="btns" onclick="checkAnswer16('D')">A lock must be acquired before it is released, but otherwise both operations can be used at any point in the method.</button>
 		</div>
-		<div id="outputContainer"><div id="outputDisplay16" class="outputStyle">was it the right answer?</div></div>
 	  </div>
 	  <div id="questionContainer">
 		<p>17</p>
 		<h1 id="questionPrompt">Which of the following operations is provided by a condition variable to remove one thread from the waiting list?</h1>
 		<div id="buttonList">
-			<button id="btn" class="btns" onclick="checkAnswer17('A')">wait</button>
-			<button id="btn" class="btns" onclick="checkAnswer17('B')">signal</button>
-			<button id="btn" class="btns" onclick="checkAnswer17('C')">broadcast</button>
-			<button id="btn" class="btns" onclick="checkAnswer17('D')">release</button>
+			<button id="AR17" class="btns" onclick="checkAnswer17('A')">wait</button>
+			<button id="BG17" class="btns" onclick="checkAnswer17('B')">signal</button>
+			<button id="CR17" class="btns" onclick="checkAnswer17('C')">broadcast</button>
+			<button id="DR17" class="btns" onclick="checkAnswer17('D')">release</button>
 		</div>
-		<div id="outputContainer"><div id="outputDisplay17" class="outputStyle">was it the right answer?</div></div>
 	  </div>
 	  <div id="questionContainer">
 		<p>18</p>
 		<h1 id="questionPrompt">Which of the following RWLock operations will block the caller if a reader has acquired the RWLock?</h1>
 		<div id="buttonList">
-			<button id="btn" class="btns" onclick="checkAnswer18('A')">startRead</button>
-			<button id="btn" class="btns" onclick="checkAnswer18('B')">doneRead</button>
-			<button id="btn" class="btns" onclick="checkAnswer18('C')">startWrite</button>
-			<button id="btn" class="btns" onclick="checkAnswer18('D')">doneWrite</button>
+			<button id="AR18" class="btns" onclick="checkAnswer18('A')">startRead</button>
+			<button id="BR18" class="btns" onclick="checkAnswer18('B')">doneRead</button>
+			<button id="CG18" class="btns" onclick="checkAnswer18('C')">startWrite</button>
+			<button id="DR18" class="btns" onclick="checkAnswer18('D')">doneWrite</button>
 		</div>
-		<div id="outputContainer"><div id="outputDisplay18" class="outputStyle">was it the right answer?</div></div>
 	  </div>
 	  <div id="questionContainer">
 		<p>19</p>
@@ -245,8 +227,7 @@
 		</div>
 	  </div>
 	  <button onclick="topFunc()" id="topBtn" title="Go to top">TOP</button>
-	  <button id="clearAll">CLEAR</button>
-	  <button id="resetBtns" onclick="clearAllBtns()">RESET BTNS</button>
+	  <button id="resetBtns" onclick="clearAllBtns()">CLEAR</button>
     <script src="Quiz_3.js"></script>
 </body>
 </html>
